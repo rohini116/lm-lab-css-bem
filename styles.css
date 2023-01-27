@@ -4,29 +4,41 @@
 
 .container {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
-.container__img {
+.container img {
   max-width: 200px;
 }
-
-.container__div {
+.container .container__div {
   text-align: center;
   border-style: groove;
   padding: 10px;
   width: min-content;
+  margin: 10% 10% 10% 10%;
 }
-
-.dark {
+.container .dark {
   background-color: #272932;
   color: #d7dbec;
 }
-
-.light {
+.container .light {
   background-color: #d7dbec;
   color: #272932;
+}
+.container button {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  border-style: solid;
+  color: #272932;
+  border-color: #272932;
+}
+.container .danger {
+  background-color: #b1170c;
+}
+.container .welcome {
+  background-color: rgb(19, 223, 33);
 }
 
 /*# sourceMappingURL=styles.css.map */
